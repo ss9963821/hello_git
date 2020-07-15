@@ -12,7 +12,7 @@ public class TEST {
 		}
 		System.out.println();
 		
-		String[] names = {"��μ�", "�ڵ���", "ȫ�浿"};
+		String[] names = {"±è¹Î¼ö", "¹Úµ¿¼ö", "È«±æµ¿"};
 		Arrays.parallelSort(names);
 		
 		for(int i=0; i<names.length; i++) {
@@ -21,6 +21,7 @@ public class TEST {
 		System.out.println();
 		System.out.println();
 		System.out.println("GitHub modify 8 line");
+		System.out.println("PULL modify 8 line");
 	}
 
 }
