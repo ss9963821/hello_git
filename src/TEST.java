@@ -12,7 +12,7 @@ public class TEST {
 		}
 		System.out.println();
 		
-		String[] names = {"È«±æµ¿", "¹Úµ¿¼ö", "±è¹Î¼ö"};
+		String[] names = {"��μ�", "�ڵ���", "ȫ�浿"};
 		Arrays.parallelSort(names);
 		
 		for(int i=0; i<names.length; i++) {
