@@ -21,7 +21,6 @@ public class TEST {
 		System.out.println();
 		System.out.println();
 		System.out.println("GitHub modify 8 line");
-		System.out.println("PULL modify 8 line");
 	}
 
 }
