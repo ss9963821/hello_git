@@ -19,6 +19,9 @@ public class TEST {
 			System.out.println("name[" + i +"]=" + names[i]);
 		}
 		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
 	}
 
 }
