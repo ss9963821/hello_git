@@ -1,0 +1,62 @@
+2020.05.06(수)
+
+Eclipse - svn 환경 구성
+OJT 코드 분석
+DEWS 그리드, 텍스트박스 사용법과 스크립트 API
+REST API
+
+*** Ctrl + Shift + R -> 파일 찾기
+Alt + Shift + A : 세로 블럭 지정이 가능한 모드로 변경 된다.
+Ctrl + Alt + Up(Down) : 한 줄(블럭) 복사
+Ctrl + Shift + T : 클래스 찾기
+Ctrl + Shift + / : 블록 주석(/* */)
+Ctrl + Shift + \ : 블록 주석 제거
+Ctrl + / : 여러 줄이 한꺼번에 주석 처리됨 (주석 해제하려면 반대로 하면 됨)
+
+
+<div>
+    <div id="grid" class="dews-ui-grid"></div>
+</div>
+
+dews.ready(function () {
+    var dataSource, grid;
+
+    // 데이터 소스를 정의
+    dataSource = dews.ui.dataSource('gridDataSource', {
+        transport: {
+            read: {
+                url: dews.url.getDataUrl('MyService', 'List')
+            }
+        }
+    });
+
+    // 그리드 정의
+    grid = dews.ui.grid('#grid', {
+        dataSource: dataSource,
+        selectable: true,
+        autoBind: true,
+        navigatable: true,
+        height: 300,
+        columns: [
+            {
+                field: "ID",
+                title: "아이디",
+                width: 100
+            },
+            {
+                field: "Name",
+                title: "이름",
+                width: 200
+            },
+            {
+                field: 'Age',
+                title: '나이',
+                width: 100
+            },
+            {
+                field: 'Address',
+                title: '주소'
+            }
+        ]
+    });
+});

@@ -1,0 +1,37 @@
+2020.04.29(수)
+*ERPIU - C#
+*ERPIU web - java jsp DB 프로시저
+             spring기반으로 웹(프레임워크) - 코틀린?
+
+*ERPIU web 모듈
+hrm 인사관리
+crm 고객관리 -> 이 두개만 맡고 있음(프로젝트개발팀에서는)
+
+hrm, crm -> 패키지로 되어있음
+
+- hrm 패키지 되어있지만,
+  메뉴만 바뀌더라도 모든걸 바꿔줘야하기에 패키지가 아닌 커스터마이징해서 고객사에게 보급
+- crm은 무조건 거의 커스터마이징함(고객사 인사처와 협의하여서)
+
+scm 물품관리
+sfa주문관리
+cm-커스터마이징 줄임말
+
+**자바 컬렉션 프레임워크(공부해야할것)
+**DB 프로시져
+**형상관리 - git, svn
+**html 태그 - input, select
+**DB - like 검색
+**javascript - ajax(jquery) 예제
+**anotation
+**jdk -
+MSSQL management
+MSSQL oracle - DBeaver
+
+모듈이름
+@service ----- 뒤에 내용은 그 페이지에 들어갔을때 로직
+
+tomcat 안에 was랑 web
+
+ERPIU web - 한 메뉴당 Java, jsp 한개 파일씩 생성
+ERP 10 - 한 메뉴당 Java, jsp 여러개 파일 생성

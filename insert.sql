@@ -1,0 +1,59 @@
+ALTER PROCEDURE [NEOE].[UP_WHR_CM_HELLO_WORLD_I]
+(
+	@P_CD_COMPANY NVARCHAR(10),
+	@P_NO_PARTNER INT,
+	@P_NM_CUST NVARCHAR(20),
+	@P_NO_TEL NVARCHAR(20),
+	@P_DT_BIRYYMM NVARCHAR(8)
+)
+
+AS
+	BEGIN
+		DECLARE
+		@SEQ	int = 0,
+		@V_ERR_MSG NVARCHAR(255) --에러메시지
+
+  	IF ( RTRIM(ISNULL(@P_CD_COMPANY, '')) = '' )
+  		BEGIN
+    		SET @V_ERR_MSG = '회사코드는 필수입니다.';
+    		GOTO ERROR
+  		END;
+
+		SET @SEQ = (SELECT ISNULL(MAX(CONVERT(INT, NO_CUST)), 0) + 1 FROM WEB_RM_OJT_CUSTOMER WHERE CD_COMPANY = @P_CD_COMPANY AND NO_PARTNER = @P_NO_PARTNER)
+	PRINT('================================================')
+	PRINT(@SEQ)
+	PRINT('================================================')
+
+  BEGIN TRANSACTION;
+		INSERT INTO WEB_RM_OJT_CUSTOMER(
+			CD_COMPANY
+			, NO_PARTNER
+			, NO_CUST
+			, NM_CUST
+			, NO_TEL
+			, DT_BIRYYMM
+		)
+		VALUES (
+			@P_CD_COMPANY
+			, @P_NO_PARTNER
+			, @SEQ
+			, @P_NM_CUST
+			, @P_NO_TEL
+			, @P_DT_BIRYYMM
+		)
+
+  IF ( @@ERROR <> 0 )
+  BEGIN
+    ROLLBACK TRANSACTION;
+    RETURN;
+  END
+
+  COMMIT TRANSACTION;
+
+  RETURN
+
+ERROR:
+  RAISERROR( @V_ERR_MSG, 16, 1 )
+  RETURN
+
+END

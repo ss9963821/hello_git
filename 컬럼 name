@@ -1,0 +1,71 @@
+"COMPANY_CODE";		//회사코드
+"COMPANY_NAME";		//회사명
+
+"GROUP_CODE";			//그룹코드
+"GROUP_NAME";			//그룹명
+
+"BIZAREA_CODE";		//사업장코드
+"BIZAREA_NAME";		//사업장명
+
+"PLANT_CODE";			//공장코드
+"PLANT_NAME";			//공장명
+
+"USER_ID";			//사용자아이디
+"USER_PASSWORD";		//사용자비밀번호
+"USER_NAME";			//사용자명
+
+"EMP_NO";				//사원번호
+"EMP_NM";				//사원명
+
+"DEPT_CODE";			//부서코드
+"DEPT_NAME";			//부서명
+
+"DDEPT_CODE";			//겸직코드
+
+"YN_CRYPTO";			//비밀번호암호화 여부
+"CD_EXT";				//외부구분(거래처,납품처)
+
+"PARTNER_CODE";		//거래처코드
+"PARTNER_NAME";		//거래처명
+
+"TPPTR_CODE";			//납품처코드
+"TPPTR_NAME";			//납품처명
+
+"DUTY_RANK_CODE";		//직위코드
+"DUTY_RANK_NAME";		//직위명
+
+"DUTY_STEP_CODE";		//직급코드
+"DUTY_STEP_NAME";		//직급명
+
+"DUTY_RESP_CODE";		//직책코드
+"DUTY_RESP_NAME";		//직책명
+
+"DUTY_WORK_CODE";		//직무코드
+"DUTY_WORK_NAME";		//직무명
+
+"DUTY_TYPE_CODE";		//직군코드
+"DUTY_TYPE_NAME";		//직군명
+
+"JOB_SERIES_CODE";	//직종코드
+"JOB_SERIES_NAME";	//직종명
+
+"ENTER_DATE";			//입사일
+"RETIRE_DATE";		//퇴사일
+"BASICRETIRE_DATE";	//퇴직기준일
+"NO_EMAIL";			//이메일
+
+"PHOTO_FILE";			//사진파일
+"NO_RES";				//주민등록번호
+
+"USER_GUBUN";			//사용자구분(내부:INT, 외부:EXT)
+
+"DEPT_HIERARCHY";		//부서 트리
+"LAST_LOGIN_DATE";	//마지막 로그인
+"CURRENT_IP";			//마지막 로그인
+
+"DZ_TOKEN";			//CSRF TOKEN
+
+"YN_NTC";
+
+"H_DEPT_CODE";		//상위부서코드
+"H_DEPT_NAME";		//상위부서명
