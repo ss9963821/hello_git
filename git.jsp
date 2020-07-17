@@ -1,3 +1,5 @@
+< GIT 사용법 >
+
 1. git-repository 폴더에서 git-bash 열기
 2. git-init
 3. git remote add origin https://github.com/ss9963821/hello_git.git
