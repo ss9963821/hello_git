@@ -22,7 +22,6 @@ $ git pull origin woongs --allow-unrelated-histories(강제로 pull)
 
 
 **branch 생성
-adfasdfasdfasdfasd
 git chechout -b woongs
 git push origin woongs
 git branch --set-upstream-to origin/woongs : git pull no tracking info 에러해결
