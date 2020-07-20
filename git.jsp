@@ -24,10 +24,12 @@ $ git pull origin woongs --allow-unrelated-histories(강제로 pull)
 **branch 생성
 git chechout -b woongs
 git push origin woongs
-git branch --set-upstream-to origin/woongs
+git branch --set-upstream-to origin/woongs : git pull no tracking info 에러해결
+
 
 git push origin master(또는 branch이름)
 
 *** git pull = git fetch + git merge
-
-  ****** GIT MERGE 
+*** git branch -r : 원격 브랜치 목록보기
+    git branch -a : 로컬 브랜치 목록보기
+    git branch -d branch_name : 브랜치 삭제하기
