@@ -34,6 +34,3 @@ git push origin master(또는 branch이름)
     git branch -a : 로컬 브랜치 목록보기
     git branch -d branch_name : 브랜치 삭제하기
 ** git diff [commit이름] [commit이름]
-    GIT TESTEST*************
-
-    ffff
