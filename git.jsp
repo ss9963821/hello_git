@@ -29,3 +29,5 @@ git branch --set-upstream-to origin/woongs
 git push origin master(또는 branch이름)
 
 *** git pull = git fetch + git merge
+
+  ****** GIT MERGE 
