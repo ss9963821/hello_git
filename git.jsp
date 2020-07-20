@@ -27,7 +27,7 @@ git chechout -b woongs
 git push origin woongs
 git branch --set-upstream-to origin/woongs : git pull no tracking info 에러해결
 
-
+ㅁㄴㅇㅁ
 git push origin master(또는 branch이름)
 
 *** git pull = git fetch + git merge
